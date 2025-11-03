@@ -25,6 +25,37 @@
             }
         ?>
         </div>
+        <br><br>
+        <h2>Nuovo disco</h2>
+        <form action="server.php" method="post" class="container my-5 p-4 border rounded shadow-sm bg-light">
+            <h4 class="mb-4 text-center">Aggiungi un nuovo disco</h4>
+
+            <div class="row g-3">
+                <div class="col-12">
+                <label for="url_image_input" class="form-label">Link dell'immagine</label>
+                <input type="text" class="form-control" id="url_image_input" name="url_image_input" placeholder="https://...">
+                </div>
+
+                <div class="col-md-6">
+                <label for="artista_input" class="form-label">Nome artista</label>
+                <input type="text" class="form-control" id="artista_input" name="artista_input" placeholder="Queen">
+                </div>
+
+                <div class="col-md-6">
+                <label for="data_input" class="form-label">Anno pubblicazione</label>
+                <input type="date" class="form-control" id="data_input" name="data_input">
+                </div>
+
+                <div class="col-12">
+                <label for="genere_input" class="form-label">Genere</label>
+                <input type="text" class="form-control" id="genere_input" name="genere_input" placeholder="Rock, Pop...">
+                </div>
+
+                <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-primary px-5">Invia</button>
+                </div>
+            </div>
+        </form>
     </div>
 </body>
 </html>
