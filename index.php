@@ -12,20 +12,19 @@
 <body>
     <h1>Dischi</h1>
     
-    <div>
-        <ul>
-            <?php
-                echo "____________________________________";
-                foreach($dischi as $disco){
-                    echo ':<li>Titolo: '.$disco["titolo"].'</li>';
-                    echo ':<li>Artista: '.$disco["artista"].'</li>';
-                    echo ':<li>URL Cover: '.$disco["url_della_cover"].'</li>';
-                    echo ':<li>Anno di pubblicazione: '.$disco["anno_di_pubblicazione"].'</li>';
-                    echo ':<li>Genere: '.$disco["genere"].'</li>';
-                    echo "____________________________________";
-                }
-            ?>
-        </ul>
+    <div div class="container">
+        <div class="row g-4">
+        <?php
+            foreach($dischi as $disco){
+                echo '<div class="col-4 col-md-6 col-sm-12"><div class="card h-100" style="width: 18rem;">';
+                echo '<img src = "'. $disco["url_della_cover"] .'">';
+                echo '<h5 class="card-title text-center mt-4 mb-4">Titolo: '.$disco["titolo"].'</h5>';
+                echo '<p class="card-text mb-2">Artista: '.$disco["artista"].'</p>';
+                echo '<p class="card-text mb-2">Anno di pubblicazione: '.$disco["anno_di_pubblicazione"].'</p>';
+                echo '<p class="card-text mb-2">Genere: '.$disco["genere"].'</p></div></div>';
+            }
+        ?>
+        </div>
     </div>
 </body>
 </html>
