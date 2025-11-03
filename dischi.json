@@ -1,0 +1,16 @@
+[
+  {
+    "titolo": "Bohemian Rhapsody",
+    "artista": "Queen",
+    "url_della_cover": "https://upload.wikimedia.org/wikipedia/en/9/9f/Bohemian_Rhapsody.png",
+    "anno_di_pubblicazione": 1975,
+    "genere": "Rock"
+  },
+  {
+    "titolo": "Blinding Lights",
+    "artista": "The Weeknd",
+    "url_della_cover": "https://upload.wikimedia.org/wikipedia/en/e/e6/The_Weeknd_-_Blinding_Lights.png",
+    "anno_di_pubblicazione": 2019,
+    "genere": "Pop"
+  }
+]
